@@ -8,7 +8,7 @@
         fetch("https://api64.ipify.org?format=json")
         .then(response => response.json())
         .then(data => {
-            let allowedIP = "37.40.238.15"; // Replace with your Wi-Fi's public IP
+            let allowedIP = ""; // Replace with your Wi-Fi's public IP
             if (data.ip === allowedIP) {
                 window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdxPGLH9_LPkZcwLNCtHt6yZ01MMfi12CwpgVuz9TBSbxSWeQ/viewform?usp=header"; // Replace with your Google Form link
             } else {
