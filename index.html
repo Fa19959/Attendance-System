@@ -10,7 +10,7 @@
     .then(data => {
         console.log("Fetched IP:", data.ip); // Log the fetched IP to the console
         if (data.ip.startsWith("5.")) { // Check if the IP starts with "5."
-            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdWiAC7cKpeE79UJOsXGCJXLigw5pIi5BYLf3mmoyZ-yjltJA/viewform?usp=header"; // Redirect if allowed
+            window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdxPGLH9_LPkZcwLNCtHt6yZ01MMfi12CwpgVuz9TBSbxSWeQ/viewform?usp=header"; // Redirect if allowed
         } else {
             document.body.innerHTML = "<h2 style='color: red; text-align: center;'>❌ Attendance can only be marked on the institute's Wi-Fi!</h2>";
         }
